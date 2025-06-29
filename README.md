@@ -7,6 +7,8 @@ The Penetration Testing Toolkit is a modular, Python-based command-line applicat
 The toolkit is built with a focus on simplicity, modularity, and clarity. It currently includes four major tools: a Port Scanner, FTP Brute-Force Tool, Whois Lookup, and a Subdomain Finder. Each module is self-contained, making it easy to understand, test, and upgrade. Users interact with the toolkit via a simple text-based menu, allowing them to select a tool and provide the necessary input for scanning or testing.
 
 🔍 Features
+
+
 ✅ Port Scanner
 This module scans a target IP address for open ports within a specified range (default: 20–1024). It helps in identifying services that are running and may be vulnerable or misconfigured.
 
@@ -19,7 +21,10 @@ Fetches WHOIS information about a given domain name using the python-whois libra
 ✅ Subdomain Finder
 Tries to identify subdomains of a given domain by sending HTTP requests to common subdomain prefixes (like mail, ftp, test, dev, etc.). Any valid responses indicate an active subdomain, which could potentially expose hidden services.
 
+
+
 ⚙️ Technologies Used
+
 Python 3.x
 
 Standard libraries: socket, ftplib
@@ -28,6 +33,7 @@ External libraries: requests, python-whois
 
 
 📁 Project Structure
+
 PentestToolkit/
 ├── main.py
 ├── modules/
@@ -38,10 +44,12 @@ PentestToolkit/
 └── README.md
 
 💡 Educational Use Only
+
 ⚠️ This project is created strictly for educational and ethical testing purposes. 
 Do not use this toolkit on networks or systems you do not own or have explicit permission to test. Unauthorized scanning and brute-forcing may be illegal and unethical.
 
 📈 Future Improvements
+
 Add threading support for faster scans.
 
 Implement more brute-force modules (SSH, HTTP forms).
